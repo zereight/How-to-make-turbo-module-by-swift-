@@ -84,25 +84,3 @@ public class TurboToastSwiftImpl: NSObject {
         }
     }
 }
-
-            // 애니메이션으로 표시
-            toastView.alpha = 0
-            UIView.animate(
-                withDuration: 0.3,
-                animations: {
-                    toastView.alpha = 1
-                }
-            ) { _ in
-                // 2초 후 자동으로 사라짐
-                UIView.animate(
-                    withDuration: 0.3, delay: 2.0, options: [],
-                    animations: {
-                        toastView.alpha = 0
-                    }
-                ) { _ in
-                    toastView.removeFromSuperview()
-                }
-            }
-        }
-    }
-}
