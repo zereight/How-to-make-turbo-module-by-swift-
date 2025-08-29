@@ -1,5 +1,5 @@
 {
-  "name": "myapp",
+  "name": "MyApp",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -37,10 +37,5 @@
   },
   "engines": {
     "node": ">=20"
-  },
-  "codegenConfig": {
-    "name": "MyAppSpecs",
-    "type": "modules",
-    "jsSrcsDir": "specs"
   }
 }
